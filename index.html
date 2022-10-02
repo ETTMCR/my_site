@@ -4,6 +4,12 @@
 -->
 <!---->
 
+<!---->
+<!--
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRN8ZldV4apz1_y8fd0j99fuqEv9uYu-oCg7FW90uRo3DkS3ywIX68t3oBLT1kw7kIbFQBmfC0O6bGv/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+-->
+<!---->
+
 
 
 <html>
@@ -25,7 +31,7 @@ article {
 }
 
 .right {
-  font-size: 22 px;
+  font-size: 22 px:important!;
   color: white;
 }
 
@@ -75,6 +81,45 @@ article {
   visibility: visible;
   opacity: 1;
 }
+/**** Tooltip container *****/
+
+.centered {
+  position: absolute;
+  color:white;
+  top: 100%;
+  left: 110%;
+  transform: translate(-50%, -50%);
+}
+
+img #logo {
+ width : 100px;
+    height: auto;
+}
+.left{
+font-weight:bold}
+
+a:link {
+ color:white;
+}
+a:hover {
+  color: red;
+  }
+
+<!--
+https://stackoverflow.com/questions/41381264/show-button-only-when-view-is-responsive-mobile-size
+-->
+.show-large {
+  display: none;
+}
+  
+  @media only screen and (min-width: 767px) {
+  .show-large {
+    display: block;
+  }
+  .show-mobile {
+    display: none;
+  }
+}
 
 </style>
 </head>
@@ -82,48 +127,44 @@ article {
 <!--
 <img src="https://raw.githubusercontent.com/ETTMCR/my_site/main/deerabbit.png" alt="deerabbit">
 -->
-<h1 style="color:white;margin-top: 20px;	">Eliran Tal</h1>
 <!--
-<p><b> Profession</b></p>
-<p><b> -</b> Formal - 7 years as <a href="https://en.wikipedia.org/wiki/STEAM_fields"><u>STEAM</u></a> teacher</p>
-<p> <b>- </b>InFormal - 20 years of coding</p>
-<p><b> Education</b></p>
-<p> <b>-</b> B.Sc. in Life Sciences</p>
-<p> <b>-</b> Teaching Certificate in Biology</p>
-<p id="lefttContent"><b> Linkedin - <a href="https://www.linkedin.com/in/eliran-tal-177b11175/"></a></p>
-<p id="rightContent"><u></b>eliran-tal-177b11175</u></p>
-<p><b> Github - <a href="https://github.com/ETTMCR?tab=repositories"><u></b>ETTMCR repositories</u></a></p>
-<p><b> Wikipedia - <a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9:Eliran_t"><u></b>Eliran_t</u></a></p>
-<p><b> Gmail - <a href="mailto:elirantal1985@gmail.com"><u></b>elirantal1985@gmail.com</u></a></p>
-<p><b> Mobile - <a href="tel:+972-54-811-7830"><u></b>+972-54-811-7830</u></a></p>
+<h1 style="color:white;">Eliran Tal<img src="https://raw.githubusercontent.com/ETTMCR/my_site/main/ET logo white.png" alt=""/></h1>
 -->
 <!--
-<div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
+<div class="container">
+  <img id="logo" src="https://raw.githubusercontent.com/ETTMCR/my_site/main/ET logo white.png" alt="ET logo white" style="width:100%;">
+  <div class="centered">Centered</div>
 </div>
 -->
 
-<article id="Profession">
-  <p style="color:blue; font-size: 22px;"> Profession </p>
-  <span class="left">Formal - </span>
-  <span class="right">7 years as <a href="https://en.wikipedia.org/wiki/STEAM_fields"><u>STEAM</u></a> teacher</span>
-  <p></p>
-  <span class="left">InFormal - </span>
-  <span class="right">20 years of coding</span>
+<h1 style="color:white;margin-top: 20px;	">Eliran Tal</h1>
 
+<article id="Profession">
+  <span style="color:blue; font-size: 22px;"> Profession </span>
+  <br>
+  <span class="left">⬤ Formal - </span>
+  <!--
+  <span class="right">6 years as a <a href="https://en.wikipedia.org/wiki/STEAM_fields"><u class="tooltip">STEAM <span class="tooltiptext">Science, Technology, Engineering, Arts, Mathematics </span></u></a> teacher</span>
+  -->
+  <span class="right">6 years as a <span style="border-bottom:  1px dotted white ;"class="tooltip">	<a>STEAM <span class="tooltiptext">Science, Technology, Engineering, Arts, Mathematics </a></span> teacher</span>
+ <br>
+  <span class="left">⬤ InFormal - </span> <!--1px dotted black-->
+    <!--show-large--><span class="right "><span style="border-bottom:  1px dotted white ;"class="tooltip">	<a>Coding <span class="tooltiptext">Python, Matlab, VB, VBS, HTML, CSS, Lego-NXT, SQL </a></span> since 1998</span>
+	    <a class="right show-mobile">Coding since 1998 (Python, Matlab, VB, VBS, HTML, CSS, Lego-NXT, SQL)</a>
 </article>
 
 <article id="Education">
-  <p style="color:blue; font-size: 22px; ">Education </p>
+  <span style="color:blue; font-size: 22px; ">Education </span>
+  <br>	
   <span  style="margin-bottom:10px;" class="left">- </span> <span class="right">B.Sc. in Life Sciences </span>
-   <p></p>
+   <br>
   <span class="left">- </span><span class="right">Teaching Certificate in Biology</span>
 </article>
 
 
 <article id="Linkedin">
-  <span class="left">Linkedin - </span>
-  <span class="right"> <a href="https://www.linkedin.com/in/eliran-tal-177b11175"><u></b>eliran-tal-177b11175</u></a></span>
+  <span id="sl" class="left">Linkedin - </span>
+  <span class="right"> <a  href="https://www.linkedin.com/in/eliran-tal-177b11175"><u></b>eliran-tal-177b11175</u></a></span>
 </article>
 
 <article id="Github">
@@ -137,7 +178,7 @@ article {
 </article>
 
 <article id="Gmail">
-<span class="left">&nbsp;Gmail - </span>
+<span class="left">Gmail - </span>
 <span class="right"> <a href="mailto:elirantal1985@gmail.com"><u></b>elirantal1985@gmail.com</u></a></span>
 </article>
 
@@ -145,9 +186,9 @@ article {
 <span class="left">Mobile - </span>
 <span class="right"> <a href="tel:+972-54-811-7830"><u></b>+972-54-811-7830</u></a></span>
 </article>
-
+<p  class="tooltip">
 <img src="https://raw.githubusercontent.com/ETTMCR/my_site/main/world world33.png" style="    width : 600px;
-    height: auto;" alt="deerabbit">
+    height: auto;" alt="hello world tribute !" > <span class="tooltiptext">Hello world ! tribute<br>entwined in my<br>astronomy hobby</span></p>
 
 </body>
 </html>
