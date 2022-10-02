@@ -1,3 +1,148 @@
 <!---->
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRN8ZldV4apz1_y8fd0j99fuqEv9uYu-oCg7FW90uRo3DkS3ywIX68t3oBLT1kw7kIbFQBmfC0O6bGv/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!---->
+
+
+
+<html>
+<head>
+<style>
+body{
+background-color : black;
+margin-left: 50px;
+}
+article {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.left {
+  font-size: 22px;
+  
+  color: blue;
+}
+
+.right {
+  font-size: 22 px;
+  color: white;
+}
+
+/**** Tooltip container *****/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<img src="https://raw.githubusercontent.com/ETTMCR/my_site/main/deerabbit.png" alt="deerabbit">
+
+<h1 style="color:white;margin-top: 20px;	">Eliran Tal</h1>
+<!--
+<p><b> Profession</b></p>
+<p><b> -</b> Formal - 7 years as <a href="https://en.wikipedia.org/wiki/STEAM_fields"><u>STEAM</u></a> teacher</p>
+<p> <b>- </b>InFormal - 20 years of coding</p>
+<p><b> Education</b></p>
+<p> <b>-</b> B.Sc. in Life Sciences</p>
+<p> <b>-</b> Teaching Certificate in Biology</p>
+<p id="lefttContent"><b> Linkedin - <a href="https://www.linkedin.com/in/eliran-tal-177b11175/"></a></p>
+<p id="rightContent"><u></b>eliran-tal-177b11175</u></p>
+<p><b> Github - <a href="https://github.com/ETTMCR?tab=repositories"><u></b>ETTMCR repositories</u></a></p>
+<p><b> Wikipedia - <a href="https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9:Eliran_t"><u></b>Eliran_t</u></a></p>
+<p><b> Gmail - <a href="mailto:elirantal1985@gmail.com"><u></b>elirantal1985@gmail.com</u></a></p>
+<p><b> Mobile - <a href="tel:+972-54-811-7830"><u></b>+972-54-811-7830</u></a></p>
+-->
+<!--
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+-->
+
+<article id="Profession">
+  <p style="color:blue; font-size: 22px;"> Profession </p>
+  <span class="left">Formal - </span>
+  <span class="right">7 years as <a href="https://en.wikipedia.org/wiki/STEAM_fields"><u>STEAM</u></a> teacher</span>
+  <p></p>
+  <span class="left">InFormal - </span>
+  <span class="right">20 years of coding</span>
+
+</article>
+
+<article id="Education">
+  <p style="color:blue; font-size: 22px; ">Education </p>
+  <span  style="margin-bottom:10px;" class="left">- </span> <span class="right">B.Sc. in Life Sciences </span>
+   <p></p>
+  <span class="left">- </span><span class="right">Teaching Certificate in Biology</span>
+</article>
+
+
+<article id="Linkedin">
+  <span class="left">Linkedin - </span>
+  <span class="right"> <a href="https://www.linkedin.com/in/eliran-tal-177b11175"><u></b>eliran-tal-177b11175</u></a></span>
+</article>
+
+<article id="Github">
+  <span class="left">Github - </span>
+  <span class="right"> <a href="https://github.com/ETTMCR?tab=repositories"><u></b>ETTMCR repositories</u></a></span>
+</article>
+
+<article id="Wikipedia">
+<span class="left">Wikipedia - </span>
+<span class="right"> <a href="https://he.wikipedia.org/wiki/משתמש:Eliran_t"><u></b>Eliran_t</u></a></span>
+</article>
+
+<article id="Gmail">
+<span class="left">&nbsp;Gmail - </span>
+<span class="right"> <a href="mailto:elirantal1985@gmail.com"><u></b>elirantal1985@gmail.com</u></a></span>
+</article>
+
+<article id="Mobile">
+<span class="left">Mobile - </span>
+<span class="right"> <a href="tel:+972-54-811-7830"><u></b>+972-54-811-7830</u></a></span>
+</article>
+
+
+</body>
+</html>
